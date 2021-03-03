@@ -1,0 +1,159 @@
+[id^="#wrapper"]{
+    
+}
+header{
+    grid-column: 1/2 ;
+    grid-row: 1/2;
+}
+header div{
+    
+      
+      display: flex;
+  
+    
+   height: 150px;
+    background-color: gray;
+    width: 100%;
+    margin-right:auto ;
+    margin-left: auto;
+}
+figure{
+    
+   
+        height: 110px;
+        width: 110px;
+        margin: 20px 150px 20px 20px;
+    
+}
+header div hgroup{
+    color: red;
+    
+}
+.content{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    width: 80%;
+    margin-right:auto ;
+    margin-left: auto;
+    justify-content: space-evenly;
+    
+}
+
+#about h3{border-bottom: 1px black solid ;
+}
+section#experiences h3{border-bottom: 1px black solid ;}
+
+#competencies h3{ border-bottom: 1px black solid;}
+#education h3{border-bottom: 1px black solid;}
+#hobbies h3{border-bottom: 1px black solid;}
+.contacts
+   
+  .experience-type{
+      color: red;
+  }  
+    
+div.experience span{color: red;}  
+
+.experience-date-separator{
+    color: red;
+}
+
+
+div.experience span.experience-institution{color:#e35f5f;
+    font-family: monospace;
+}
+div.experience-details  span{color: gray ;}
+
+.skill{
+   
+   margin: 5px;
+    width:100%;
+    background-color: gray;
+    margin-top: 3px;
+}
+
+.skills{margin: 25px;}
+.skills-primary>[data-skill="5"]>span{
+    margin: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    color: white;
+    display: inline-block;
+    width: 50%;
+    background-color: red;
+
+}
+
+.skills-secondary>[data-skill="5"]>span{
+    margin: 3px;
+    color: white;
+    display: inline-block;
+    width: 50%;
+    background-color: rgb(240, 69, 69);
+
+}
+[data-skill="1"]>span{ margin: 3px; display: inline-block; width: 10%; background-color: red ; color: white;}
+[data-skill="3"]>span{ margin: 3px; display: inline-block;  background-color: red; width: 30%;color: white;}
+[data-skill="9"]>span{ margin: 3px; display: inline-block; background-color: rgb(240, 69, 69); color: white; width: 90%;}
+[data-skill="7"]>span{ margin: 3px; display: inline-block;background-color: rgb(243, 62, 62); color: white; width: 70%;}
+
+
+
+
+
+#contact{
+    
+   
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+#contact h3{
+    display: none;
+}
+.contact{
+    display: flex;
+}
+.contacts{
+    display: grid;
+    grid-template-rows:8% 8% 8% 8% 8%;
+   
+    
+}
+dt{
+  
+        background-color: red;
+        color: white;
+    }
+    dd, dd a{
+        background-color: black;
+        color: red;
+    }
+    @media screen and (max-width: 4in ){
+        .content{
+            margin-bottom: 200px;
+         display: list-item;
+
+        }
+        header div{
+            display: list-item;
+        }
+        #contact{
+            position: relative;
+             bottom: 0;
+       
+        }
+        dt { color: black;}
+
+    }
+    @media screen and (max-width:585px){
+        header div{
+            display: list-item;
+            
+        }
+        header div{
+            height: 200px;
+        }
+    }
