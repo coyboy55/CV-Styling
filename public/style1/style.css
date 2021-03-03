@@ -157,3 +157,11 @@ dt{
             height: 200px;
         }
     }
+    h3::before {
+        content: "";
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        background-color: red;
+        border-radius: 50%;
+      }
