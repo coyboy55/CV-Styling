@@ -1,0 +1,194 @@
+header{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    
+    
+}
+hgroup h2{display: none;}
+figure{
+    transform: rotate(-15deg);
+    z-index: 1;
+    margin-left: 70%;
+}
+
+.content{
+    
+    width: 60%;
+    margin-left: 30%;
+    
+}
+section#about h3{
+    
+    display: none;
+}
+section#about p{
+    margin-top: 2%;
+    padding-right: 50%;
+    padding-top: 2%;
+    border-top: 1px black solid;
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 10%;  
+    
+}
+#competencies{
+    
+    margin-top: 20%;
+    
+}
+section#experiences h3{
+    
+    margin-left: -13%;
+}
+section#education h3{
+    margin-left: -13%;
+}
+section#hobbies h3{
+    margin-left: -13%;
+}
+section#competencies h3{
+    margin-left: -13%;
+}
+.experience-details{
+   margin-left: 80%;
+   color: gray;
+}
+div.experience h4{
+    color: rgb(0, 107, 80);
+}
+.skills-primary{
+    
+    columns: 3;
+    margin-top: -3%;
+    padding-left: 1%;
+    border-left: 1px black solid;
+}
+.skills-secondary{
+    columns: 3;
+    padding-left: 1%;
+    border-left: 1px black solid;
+}
+#experiences{
+    border-left: 1px black solid;
+    padding-left: 1%;
+    
+}
+#education{
+    border-left: 1px black solid;
+    padding-left: 1%;
+}
+#hobbies{
+    border-left: 1px black solid;
+    padding-left: 1%;
+}
+.skills-primary>[data-skill="5"]>span{
+    width: 200px;
+   
+    margin: 3px;
+    color: white;
+    display: inline-block;
+    padding: 2% 0% 2% 0%;
+    background-color: rgb(0, 87, 65);
+
+}
+.skills-secondary>[data-skill="5"]>span{
+    width: 200px;
+    font-size: small;
+    margin: 3px;
+    color: white;
+    display: inline-block;
+    padding: 1% 0% 1% 0%;
+    background-color: rgb(0, 87, 65);
+
+}
+[data-skill="1"]>span{ padding: 2% 0% 2% 0%;  width: 200px; margin: 3px; display: inline-block;  background-color:  rgb(0, 87, 65); ; color: white;}
+[data-skill="3"]>span{padding: 2% 0% 2% 0%;  width: 200px; margin: 3px; display: inline-block;  background-color: rgb(0, 87, 65); color: white;}
+[data-skill="9"]>span{font-size: small; padding: 1% 0% 1% 0%;  width: 200px; margin: 3px; display: inline-block; background-color: rgb(0, 87, 65); color: white; }
+[data-skill="7"]>span{font-size: small; padding: 1% 0% 1% 0%; width: 200px; margin: 3px; display: inline-block;background-color: rgb(0, 87, 65); color: white; }
+
+[data-skill="5"]>span:after{
+    content: "★★★";
+}
+[data-skill="1"]>span:after{content: "★";}
+[data-skill="7"]>span:after{content: "★★★★";}
+[data-skill="9"]>span:after{content: "★★★★★";}
+[data-skill="3"]>span:after{content: "★★";}
+
+dl.contact-email a{
+    content:url(email.png);
+    width:1in;
+    height: 1in;
+}
+.contact-skype {
+    display: none;
+}dl.contact-phone a{
+    content:url(phone.png);
+    width:1in;
+    height: 1in;
+}dl.contact-github a{
+    content:url(github.png);
+    width:1in;
+    height: 1in;
+}dl.contact-facebook a{
+    content:url(facebook.png);
+    width:1in;
+    height: 1in;
+}
+.contact-type{
+    display: none;
+}
+.contacts{
+    display: flex;
+}
+section#contact h3{
+   display: none;
+}
+@media screen and (max-width: 3in){
+    section#experiences h3{
+    
+        margin-left: 13%;
+    }
+    section#education h3{
+        margin-left: 13%;
+    }
+    section#hobbies h3{
+        margin-left: 13%;
+    }
+    section#competencies h3{
+        margin-left: 13%;
+    }
+    figure{
+        display: none;
+    }
+    section#about p {
+        width:100%
+    }
+    #competencies{
+        margin-top: 200px;
+    }
+    section#about p{
+        position: absolute;
+        top: 16%;
+         
+    }
+    .contacts{
+        display:grid;
+    grid-template-columns: auto auto;    }
+}
+@media screen and (max-width: 800px){
+    #competencies{
+        margin-top: 350px;
+    }
+    section#about p{
+        position: absolute;
+        top: 11%;
+         
+    }
+}
